@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#66b9db"/><stop offset="1" stop-color="#d9e8c2"/></linearGradient>
+    <linearGradient id="field" x2="0" y2="1"><stop stop-color="#629c53"/><stop offset="1" stop-color="#244b34"/></linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#sky)"/>
+  <circle cx="374" cy="57" r="31" fill="#ffe89b"/>
+  <path d="M0 165c63-46 93-36 150 3 61-48 103-45 155 0 54-40 114-36 175 4v148H0Z" fill="#679657"/>
+  <path d="M0 207h480v113H0Z" fill="url(#field)"/>
+  <path d="M62 192V94h356v98M42 192h396M83 94l22-40h271l22 40" fill="#e9d8a8" stroke="#744f37" stroke-width="8"/>
+  <path d="M97 103h286v81H97z" fill="#b5d1b3"/>
+  <path d="M119 115h50v69h-50zm72 0h50v69h-50zm72 0h50v69h-50z" fill="#597c6c"/>
+  <path d="M57 190h366v17H57z" fill="#8d643e"/>
+  <text x="240" y="82" text-anchor="middle" fill="#553e2d" font-family="Arial,sans-serif" font-size="21" font-weight="700">ADUSTECH</text>
+  <path d="M0 264c100-22 183-17 263 3 73-25 141-24 217-2v55H0z" fill="#315c37"/>
+  <circle cx="35" cy="186" r="31" fill="#315f36"/><circle cx="31" cy="164" r="25" fill="#478045"/>
+  <circle cx="443" cy="174" r="33" fill="#315f36"/><circle cx="448" cy="152" r="27" fill="#4a8446"/>
+</svg>

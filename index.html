@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d0c">
+    <meta name="description" content="Adustechlife connects the ADUSTECH campus community.">
+    <title>Adustechlife — Campus, connected</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/supabase-config.js" defer></script>
+    <script src="js/supabase-auth.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div id="auth-root" class="auth-root" aria-live="polite">
+      <section class="auth-card">
+        <p class="eyebrow">ADUSTECH · WUDIL</p>
+        <h1>Loading your campus…</h1>
+      </section>
+    </div>
+    <div class="app-shell" hidden>
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" data-page="home" aria-label="Adustechlife home">
+          <span class="brand-mark">a<span>.</span></span>
+          <span class="brand-name">adustech<span>life</span></span>
+        </a>
+        <div class="campus-label"><span class="status-dot"></span> ADUSTECH · WUDIL</div>
+        <nav class="side-nav">
+          <button class="nav-link active" data-page="home"><span class="nav-icon">⌂</span> Home</button>
+          <button class="nav-link" data-page="explore"><span class="nav-icon">⌕</span> Explore</button>
+          <button class="nav-link" data-page="messages"><span class="nav-icon">▤</span> Messages <span class="nav-count">2</span></button>
+          <button class="nav-link" data-page="profile"><span class="nav-icon">◉</span> My profile</button>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <p class="side-section-label">YOUR CAMPUS</p>
+        <button class="nav-link" data-page="explore" data-filter="Gist"><span class="nav-icon">◌</span> Campus gist</button>
+        <button class="nav-link" data-page="explore" data-filter="Events"><span class="nav-icon">▦</span> Events</button>
+        <button class="nav-link" data-page="explore" data-filter="Communities"><span class="nav-icon">♧</span> Communities</button>
+        <button class="nav-link" data-page="explore" data-filter="Marketplace"><span class="nav-icon">◇</span> Marketplace</button>
+        <div class="sidebar-bottom">
+          <div class="sidebar-promo">
+            <span class="promo-spark">✳</span>
+            <strong>Good things<br>happen on campus.</strong>
+            <span>Make your university days count.</span>
+          </div>
+          <button class="mini-profile" data-page="profile">
+            <span class="avatar avatar-me">UA</span>
+            <span class="mini-profile-text"><strong>Usman Abubakar</strong><small>Student · ADUSTECH</small></span>
+            <span class="more-dots">···</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <a class="mobile-brand" href="#" data-page="home" aria-label="Adustechlife home">
+            <svg class="brand-symbol" viewBox="0 0 42 42" aria-hidden="true"><path d="M4 13 35 6 19 19l-4 16-4-10-7-2 12-4Z" fill="currentColor"/><path d="m13 24 7-5" fill="none" stroke="#07130a" stroke-width="2"/><circle cx="34" cy="7" r="2" fill="#b5ffbd"/></svg>
+            <span class="brand-copy"><span class="brand-name">Adustech<span>life</span></span><span class="brand-tagline">Connect <b>·</b> Share <b>·</b> Explore</span></span>
+          </a>
+          <div class="topbar-campus"><span class="status-dot"></span> Your campus, your people</div>
+          <div class="topbar-actions">
+            <button class="icon-button mobile-map-button" aria-label="Campus map" data-action="map-info"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg></button>
+            <button class="icon-button search-shortcut" aria-label="Search" data-page="explore"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg></button>
+            <button class="icon-button mobile-activity-button" aria-label="Activity" data-action="activity-info"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.2-8.8 11-8.8 11s-8.8-5.8-8.8-11a4.8 4.8 0 0 1 8.8-2.6 4.8 4.8 0 0 1 8.8 2.6Z"/></svg><span class="activity-dot"></span></button>
+            <button class="icon-button notification-button" aria-label="Notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg><span class="notification-dot">3</span></button>
+            <span class="avatar avatar-me top-avatar">UA</span>
+            <button class="auth-signout" data-action="sign-out" hidden>Sign out</button>
+          </div>
+        </header>
+        <div id="view-root" class="view-root" aria-live="polite"></div>
+      </main>
+
+      <aside class="right-rail" aria-label="Campus highlights">
+        <section class="rail-weather">
+          <div><span class="weather-icon">☀</span><span class="weather-copy"><strong>Wudil, Kano</strong><small>A bright day on campus</small></span></div>
+          <span class="weather-temp">32°</span>
+        </section>
+        <section class="rail-card map-card">
+          <div class="rail-heading"><div><p class="eyebrow">AROUND YOU</p><h2>Campus map</h2></div><span class="map-pin">⌖</span></div>
+          <div class="map-illustration" aria-label="Illustration of the campus map">
+            <span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span>
+            <span class="map-green green-one"></span><span class="map-green green-two"></span>
+            <span class="map-point point-one">●</span><span class="map-point point-two">●</span><span class="map-point point-three">●</span>
+            <span class="map-label label-one">Main gate</span><span class="map-label label-two">Library</span><span class="map-label label-three">You</span>
+          </div>
+          <p class="map-caption"><span class="status-dot"></span> A little closer to campus life</p>
+          <button class="text-action" data-action="map-info">Explore campus map <span>↗</span></button>
+        </section>
+        <section class="rail-card trending-card">
+          <div class="rail-heading"><div><p class="eyebrow">HAPPENING NOW</p><h2>Campus pulse</h2></div><span class="pulse-icon">↗</span></div>
+          <button class="trend-item" data-page="explore" data-filter="Trending"><span class="trend-number">01</span><span><strong>#WudilWeek</strong><small>Campus · 248 posts</small></span><span class="trend-arrow">↗</span></button>
+          <button class="trend-item" data-page="explore" data-filter="Trending"><span class="trend-number">02</span><span><strong>Registration gist</strong><small>Academics · 96 posts</small></span><span class="trend-arrow">↗</span></button>
+          <button class="trend-item" data-page="explore" data-filter="Trending"><span class="trend-number">03</span><span><strong>Who’s at the café?</strong><small>Campus · 54 posts</small></span><span class="trend-arrow">↗</span></button>
+          <button class="text-action" data-page="explore" data-filter="Trending">See what’s trending <span>↗</span></button>
+        </section>
+        <p class="rail-footer">A place for your campus life.<br><span>Made for the ADUSTECH community.</span></p>
+      </aside>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <button class="mobile-nav-item active" data-page="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg><small>Home</small></button>
+      <button class="mobile-nav-item" data-page="explore"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg><small>Explore</small></button>
+      <button class="mobile-camera" data-page="camera" aria-label="Create a post or story"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3v11H4Z"/><circle cx="12" cy="13.5" r="3.5"/></svg></button>
+      <button class="mobile-nav-item" data-page="messages"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-3 2v-6a7.5 7.5 0 1 1 17-3.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg><small>Messages</small><span class="nav-badge">3</span></button>
+      <button class="mobile-nav-item" data-page="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><small>Profile</small></button>
+    </nav>
+
+    <div id="admin-root" hidden></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#7bc1ec"/><stop offset=".68" stop-color="#d6e8df"/><stop offset="1" stop-color="#a8c18a"/></linearGradient>
+    <linearGradient id="building" x2="0" y2="1"><stop stop-color="#ead3a5"/><stop offset="1" stop-color="#ac8b5d"/></linearGradient>
+    <linearGradient id="stage" x2="0" y2="1"><stop stop-color="#073c39"/><stop offset="1" stop-color="#061b21"/></linearGradient>
+    <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#566e42"/><stop offset="1" stop-color="#243b31"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <circle cx="1004" cy="110" r="59" fill="#ffdf91" opacity=".8"/>
+  <path d="M0 267 156 185l121 69 143-108 151 107 155-87 144 92 139-72 191 85v210H0Z" fill="#6a9c59"/>
+  <path d="M84 245 156 211l51 28 67-48 67 43 80-63 87 54v191H84Z" fill="#315f3d"/>
+  <path d="M102 165h980v325H102z" fill="url(#building)" stroke="#765c3d" stroke-width="8"/>
+  <path d="M132 190h916v19H132z" fill="#92754f"/>
+  <path d="M155 225h871v213H155z" fill="#c4aa7d"/>
+  <path d="M175 242h154v168H175zm184 0h155v168H359zm185 0h154v168H544zm184 0h154v168H728zm184 0h154v168H912z" fill="#57726f"/>
+  <path d="M183 250h139v12H183zm184 0h140v12H367zm184 0h139v12H551zm184 0h139v12H735zm184 0h139v12H919z" fill="#d5c49e"/>
+  <path d="M183 340h139v10H183zm184 0h140v10H367zm184 0h139v10H551zm184 0h139v10H735zm184 0h139v10H919z" fill="#d5c49e"/>
+  <path d="M102 438h980v52H102z" fill="#8a6d49"/>
+  <text x="600" y="160" text-anchor="middle" fill="#40596b" font-family="Arial,sans-serif" font-size="50" font-weight="700">ADUSTECH</text>
+  <text x="600" y="190" text-anchor="middle" fill="#435b65" font-family="Arial,sans-serif" font-size="17">Innovation for a Better Tomorrow</text>
+  <path d="M0 468h1200v292H0z" fill="url(#ground)"/>
+  <path d="M0 508h1200v22H0z" fill="#d1bb90"/>
+  <path d="M82 506v-104h21v104m-49-91h77l-37-64z" fill="#f4efe2"/>
+  <path d="M53 416h82l-9 12H61z" fill="#d8cfbe"/>
+  <path d="M795 465V348h286v117" fill="#172c2f" stroke="#263b3b" stroke-width="12"/>
+  <path d="M818 365h240v91H818z" fill="url(#stage)"/>
+  <path d="M807 340h262v12H807zm-14 17h291v8H793z" fill="#d3d5ce"/>
+  <path d="M831 348v-26m211 26v-26m-160 26v-26m108 26v-26" stroke="#afb8ad" stroke-width="7"/>
+  <circle cx="842" cy="390" r="9" fill="#57f8d2"/><circle cx="1029" cy="391" r="9" fill="#f3cb5c"/>
+  <text x="938" y="405" text-anchor="middle" fill="#e5f6e8" font-family="Arial,sans-serif" font-size="22" font-weight="700">STUDENT</text>
+  <text x="938" y="435" text-anchor="middle" fill="#e5f6e8" font-family="Arial,sans-serif" font-size="22" font-weight="700">WEEK 2026</text>
+  <path d="M22 710c76-83 111-100 177-68 46-77 87-88 140-29 60-83 106-77 159-30 65-89 111-79 166-17 69-91 113-78 167-27 70-80 111-61 149-1 67-73 128-58 220 9v213H22Z" fill="#172e2b"/>
+  <g stroke="#d4ae88" stroke-width="5">
+    <path d="M50 760v-83m39 83v-110m52 110v-77m57 77v-124m65 124v-92m67 92v-110m65 110v-85m77 85v-123m66 123v-93m72 93v-118m66 118v-82m72 82v-110m59 110v-95m70 95v-127m65 127v-87"/>
+  </g>
+  <g fill="#382a24">
+    <circle cx="50" cy="666" r="21"/><circle cx="89" cy="629" r="22"/><circle cx="141" cy="672" r="20"/><circle cx="198" cy="629" r="22"/><circle cx="263" cy="657" r="21"/><circle cx="330" cy="629" r="22"/><circle cx="395" cy="668" r="20"/><circle cx="472" cy="626" r="22"/><circle cx="538" cy="657" r="21"/><circle cx="610" cy="632" r="22"/><circle cx="676" cy="669" r="20"/><circle cx="748" cy="637" r="22"/><circle cx="814" cy="666" r="20"/><circle cx="886" cy="637" r="22"/><circle cx="945" cy="671" r="20"/><circle cx="1015" cy="629" r="22"/><circle cx="1080" cy="662" r="21"/><circle cx="1149" cy="632" r="22"/>
+  </g>
+  <g fill="#e7e2d7">
+    <path d="M137 760v-68h28v68m201 0v-72h30v72m341 0v-77h31v77m288 0v-70h28v70"/>
+  </g>
+  <path d="M236 760v-94h40v94m413 0v-94h40v94m-401 0v-116h34v116m456 0v-107h34v107" fill="#315768"/>
+  <path d="M300 760v-91h28v91m559 0v-92h29v92m-237 0v-87h29v87" fill="#a4413d"/>
+</svg>
